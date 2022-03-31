@@ -1,7 +1,3 @@
-let P1_WinsPoints = 0
-let P2_WinsPoints = 0
-let Coin_1 = 0
-let Coin_2 = 0
 input.onButtonPressed(Button.AB, function () {
     basic.showString("P1")
     basic.showNumber(P1_WinsPoints)
@@ -29,3 +25,16 @@ input.onGesture(Gesture.Shake, function () {
     Coin_1 = 2
     Coin_2 = 2
 })
+let Coin_2 = 0
+let Coin_1 = 0
+let P2_WinsPoints = 0
+let P1_WinsPoints = 0
+basic.showLeds(`
+    . # # # .
+    # . . . #
+    # . . . #
+    # . . . #
+    . # # # .
+    `)
+basic.showString("h=heads")
+basic.showString("t=tails")

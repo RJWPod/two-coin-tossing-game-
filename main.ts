@@ -9,17 +9,17 @@ input.onGesture(Gesture.Shake, function () {
     Coin_1 = randint(0, 1)
     Coin_2 = randint(0, 1)
     if (Coin_1 == 0 && Coin_2 == 0) {
-        basic.showString("2 heads")
+        basic.showString("2h")
         basic.showString("P1 Wins")
         P1_WinsPoints += 1
     }
     if (Coin_1 == 1 && Coin_2 == 1) {
-        basic.showString("2 tails")
+        basic.showString("2t")
         P1_WinsPoints += 1
         basic.showString("P1 Wins")
     }
     if (Coin_1 == 1 && (Coin_2 == 0 || Coin_2 == 0 && Coin_1 == 1)) {
-        basic.showString("1 heads, 1 tails")
+        basic.showString("1h,1t")
         basic.showString("P2 Wins")
         P2_WinsPoints += 1
     }

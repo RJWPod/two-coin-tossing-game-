@@ -35,6 +35,8 @@ basic.showLeds(`
     # . . . #
     . # # # .
     `)
+basic.showString("h=heads")
+basic.showString("t=tails")
 basic.forever(function () {
 	
 })
